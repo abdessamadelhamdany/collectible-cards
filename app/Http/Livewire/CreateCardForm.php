@@ -2,7 +2,10 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Brand;
 use App\Models\Card;
+use App\Models\Category;
+use App\Models\Release;
 use Livewire\Component;
 
 class CreateCardForm extends Component
@@ -38,6 +41,10 @@ class CreateCardForm extends Component
 
     public function render()
     {
-        return view('livewire.create-card-form');
+        return view('livewire.create-card-form', [
+            'categories' => Category::orderBy('name')->get(),
+            'brands' => Brand::orderBy('name')->get(),
+            'releases' => Release::orderBy('name')->get(),
+        ]);
     }
 }

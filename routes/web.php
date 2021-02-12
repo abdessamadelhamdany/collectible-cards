@@ -13,6 +13,6 @@ Route::view('/', 'welcome');
 Route::middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-    Route::get('cards', CardList::class);
-    Route::get('/cards/create', CreateCardForm::class);
+    Route::get('cards', CardList::class)->name('cards.index');
+    Route::get('/cards/create', CreateCardForm::class)->name('cards.create');
 });
