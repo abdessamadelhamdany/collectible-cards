@@ -6,7 +6,7 @@
                     <input type="text" class="form-control" wire:model="query" placeholder="Write a card title">
                 </div>
                 <div class="col-auto">
-                    <button class="btn btn-primary px-5" type="submit" wire:click="search">Search</button>
+                    <button class="btn btn-primary px-5" type="submit">Search</button>
                 </div>
             </form>
         </div>

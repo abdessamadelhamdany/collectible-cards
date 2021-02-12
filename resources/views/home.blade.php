@@ -9,14 +9,18 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     {{ __('You are logged in!') }}
+
                 </div>
             </div>
+        </div>
+        <div class="col-md-8 mt-3">
+            <a class="btn btn-primary" href="{{ route('cards.index') }}">Cards</a>
         </div>
     </div>
 </div>

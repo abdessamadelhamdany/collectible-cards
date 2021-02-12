@@ -23,7 +23,7 @@ class CardList extends Component
             'brand_name' => '',
             'year' => ''
         ];
-        $this->cards = Card::all();
+        $this->cards = auth()->user()->cards;
     }
 
     public function search()
@@ -34,7 +34,7 @@ class CardList extends Component
 
     public function onFilterChange()
     {
-        $cards = Card::query();
+        $cards = auth()->user()->cards();
 
         if (!empty($this->filters['category'])) {
             $cards = $cards->where('category', $this->filters['category']);
