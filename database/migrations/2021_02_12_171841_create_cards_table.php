@@ -15,6 +15,12 @@ class CreateCardsTable extends Migration
     {
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('title');
+            $table->string('brand_name');
+            $table->string('category');
+            $table->string('release_name');
+            $table->integer('year');
             $table->timestamps();
         });
     }

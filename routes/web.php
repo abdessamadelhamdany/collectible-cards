@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Livewire\CardList;
+use App\Http\Livewire\CreateCardForm;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -11,5 +13,6 @@ Route::view('/', 'welcome');
 Route::middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-    Route::get('cards', [CardController::class, 'index'])->name('cards.index');
+    Route::get('cards', CardList::class);
+    Route::get('/cards/create', CreateCardForm::class);
 });
