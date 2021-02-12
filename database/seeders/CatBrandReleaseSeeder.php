@@ -1,0 +1,205 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Brand;
+use App\Models\Category;
+use App\Models\Release;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
+
+class CatBrandReleaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $data = [
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Bowman'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Chrome'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Heritage'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Gypsy Queen'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Black'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Tier One'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Finest'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Series One'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Series Two'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Allen & Ginter'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Update'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Chrome Sapphire'],
+            ['category' => 'Baseball', 'brand' => 'Topps', 'release' => 'Brooklyn'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Donruss Optic'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Prizm'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'National Treasures'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Contenders'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Chronicles'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Absolute'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Donruss Diamond'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Select '],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Stars & Stripes'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Donruss Baseball'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Elite Extra'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Immaculate'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Golden Age'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Hometown Heros'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Pinnacle'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Signature Series'],
+            ['category' => 'Baseball', 'brand' => 'Panini', 'release' => 'Flawless'],
+            ['category' => 'Baseball', 'brand' => 'Upper Deck', 'release' => 'Signature Stars'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Flash '],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Valiant '],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Lumber'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Metal'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Draft'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Ultimate'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Trinity'],
+            ['category' => 'Baseball', 'brand' => 'Leaf', 'release' => 'Perfect Game'],
+            ['category' => 'Baseball', 'brand' => 'Onyx', 'release' => 'Nimbus Collection'],
+            ['category' => 'Baseball', 'brand' => 'Onyx', 'release' => 'Vintage'],
+            ['category' => 'Baseball', 'brand' => 'Onyx', 'release' => 'Platinum'],
+            ['category' => 'Baseball', 'brand' => 'Fleer', 'release' => 'Red Sox'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'XFL Football'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Fire Footbll'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Field Acces'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Strata'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'High Tek'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Chrome'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Five Star'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Translucent'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Supreme'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Triple Threads'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Prime'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Finest'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Heritage'],
+            ['category' => 'Football', 'brand' => 'Topps', 'release' => 'Bowman'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Contenders'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'One'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Plates and Patches'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Limited'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Donruss Optic'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Honors'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Playbook'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Prizm'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Obsidian'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Immaculate'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Rookie and Stars'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Play off'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Illusions'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Flawless'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Mosaic Phoenix'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'XR'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Spectra'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'National Treasures'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Absolute'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Zenith'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Origins '],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Donruss Elite'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Black'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Certified'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Elements'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Gold Standard'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Prestige'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Luminance'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Select'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Chronicles'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Legacy'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Score'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Encased'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Passing the Torch'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Impeccable'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Five'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Unparalled'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Majestic'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Crown Royale'],
+            ['category' => 'Football', 'brand' => 'Panini', 'release' => 'Playoff'],
+            ['category' => 'Football', 'brand' => 'Upper Deck', 'release' => 'SP Authentic'],
+            ['category' => 'Football', 'brand' => 'Upper Deck', 'release' => 'Football'],
+            ['category' => 'Football', 'brand' => 'Upper Deck', 'release' => 'SP Rookie Threads'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Metal'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Autographed'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Draft'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Trinity'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Valiant'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Ultimate'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Best of'],
+            ['category' => 'Football', 'brand' => 'Leaf', 'release' => 'Originals'],
+            ['category' => 'Football', 'brand' => 'Fleer', 'release' => 'Hot Prospect'],
+            ['category' => 'Basketball', 'brand' => 'Topps', 'release' => 'Finest'],
+            ['category' => 'Basketball', 'brand' => 'Topps', 'release' => 'Chrome'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Contenders'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'One and One'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Revolution'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Limited'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Donruss Optic'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Hoops'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Playbook'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Prizm'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Obsidian'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Immaculate'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Rookie and Stars'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Play off'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Illusions'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Flawless'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Eminence'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'XR'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Spectra'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'National Treasures'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Innovation'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Gold Standard'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Origins '],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Donruss Elite'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Black'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Totally Certified'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Elements'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Timless'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Prestige'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Luminance'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Select'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Chronicles'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Exalibur'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Status'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Encased'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Crusade'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Impeccable'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Titanium'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Unparalled'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Pinnacle'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Crown Royale'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Threads'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Past and Present'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Marquee'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Clear Vision'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Court Kings'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Grand Reserve'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Opulence'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Noir'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Corner Stones'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Essentials'],
+            ['category' => 'Basketball', 'brand' => 'Panini', 'release' => 'Dominion'],
+        ];
+
+        Category::insert($this->extractData('category', $data));
+        Brand::insert($this->extractData('brand', $data));
+        Release::insert($this->extractData('release', $data));
+    }
+    private function extractData($key, $data)
+    {
+        $result = array_values(array_map(function ($item) use ($key) {
+            return  strtolower(trim($item[$key]));
+        }, $data));
+
+        $result = array_map(function ($item) {
+            return [
+                'name' => $item,
+                'slug' => Str::slug($item),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }, array_unique($result));
+
+        return $result;
+    }
+}
